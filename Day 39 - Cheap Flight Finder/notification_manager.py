@@ -1,9 +1,10 @@
+import os
 from twilio.rest import Client
 
-TWILIO_SID = "AC10c0f590d3118a16821715aae2c053a5"
-TWILIO_AUTH = "6662995a3b6f0d0d3e61856b863516fb"
-TWILIO_VISUAL_NUMBER = "+18059181349"
-TWILIO_VERIFY_NUMBER = "+66955429616"
+TWILIO_SID = os.environ("TWILIO_SID")
+TWILIO_AUTH = os.environ("TWILIO_AUTH")
+TWILIO_VISUAL_NUMBER = os.environ("TWILIO_VISUAL_NUMBER")
+TWILIO_VERIFY_NUMBER = os.environ("TWILIO_VERIFY_NUMBER")
 
 class NotificationManager:
     #This class is responsible for sending notifications with the deal flight details.

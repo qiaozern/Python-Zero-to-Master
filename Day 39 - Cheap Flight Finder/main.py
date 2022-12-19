@@ -1,4 +1,3 @@
-import requests
 from datetime import datetime, timedelta
 from data_manager import DataManager
 from notification_manager import NotificationManager
